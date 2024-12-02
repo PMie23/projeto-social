@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover; /*Ajustou a imagem madeira do fundo para uma só, sem repetição e completa*/
+    background-attachment: fixed;
+}
+
+main {
+    height: 100vh;
+    position: relative; /*Container de dentro*/
+}
+
+section#telefone {
+    /*Container de fora com o cód abaixo*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Esse cód faz com que puxe o quadrado pro centro do main. Pq so o top e o left deixou o quadrado no canto esquerdo e não no centro*/
+
+    height: 627px;
+    width: 311px;
+    background: url(../imagens/frame-iphone.png) no-repeat; /*Tirou a repetição da imagem do celular*/
+
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 267px;
+    height: 471px; /*Ajuste perfeito para a imagem da tel ado celular ficar dentro da tela do celular*/
+    border-radius: 1px;
+    
+}
