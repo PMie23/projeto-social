@@ -45,3 +45,23 @@ iframe#tela {
     border-radius: 1px;
     
 }
+
+section#redes-sociais {
+    text-align: right;
+
+}
+
+section#redes-sociais img { /*CSS da parte das imagens das redes sociais*/
+    width: 50px; /*Precisa somente do width pq já reduz auto o width e o weight*/
+    margin: 10px;
+    border-radius: 50%; /*Faz uma borda redonda sendo metade da imagem, o que faz com que todos os cantos se juntem, formando um círculo*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39)
+
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.363); /*Cria a borda nos ícones de redes sociais*/
+    transform: translate(-3px, -3px); /*Faz com que os ícones de redes sociais va um pouco para esquerda e cima qnd passa o mouse por cima*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);
+    transition: transform .5s, border 1s; /*Faz com que os ícones andem suavemente e que a borda apareça com uma margem de tempo tb. Porém, o "border" ta dando uma travadinha nos ícones no final. */
+}
